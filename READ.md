@@ -1,2 +1,5 @@
 'SWIFTBASE DEPLOYMENT' 
-accoun backend name pi.account.swiftbase.com
+account backend name pi.account.swiftbase.com
+frontend domain name swfitbase.com
+backend domain name api.swfitbase.com
+splash domain name api.swiftbase.splash.com
