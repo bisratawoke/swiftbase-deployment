@@ -1,0 +1,26 @@
+version: '2.0'
+services:
+  entry:
+    build: ./entry/
+    ports:
+      -  "80:80"
+  swiftbase.com:
+    build: ./frontendConf/
+    expose: 
+      - 80  
+  api.swiftbase.com:
+    build: ./apiConf/
+    expose: [80]
+  
+  splash.swiftbase.com:
+    image: splash:v1.0
+    expose: [80]
+   
+  api.account.swiftbase.com:
+    image: account.com
+    expose: [80]
+networks:
+
+  default:
+    external:
+      name: swiftnet
